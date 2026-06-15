@@ -11,48 +11,41 @@ La aplicación se encuentra totalmente desplegada en la nube y puede ser probada
 **[Ver Constancia de Matrícula en Netlify](https://vocal-vacherin-8533c9.netlify.app/constancia/20250100)**
 
 ---
+## Comandos Utilizados en el Desarrollo
 
-##  Configuración del Proyecto (Project Setup)
+A continuación se detallan los comandos ejecutados en la terminal de forma secuencial para la creación, configuración y construcción del proyecto:
 
-Si deseas clonar y ejecutar este proyecto de forma local en tu computadora, sigue estos pasos:
-
-### 1. Instalar Dependencias
-```sh
-npm install
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+### 1. Inicialización del Proyecto
+Para crear la estructura base de la aplicación con Vue 3 y Vite en el directorio actual:
 
 ```sh
-npm install
+npm create vue@latest .
 ```
+### 2. Instalación de Dependencias
+Para instalar los paquetes del núcleo de Vue y la librería Axios para las peticiones HTTP a la API:
 
-### Compile and Hot-Reload for Development
+```sh
+npm install
+npm install axios
+```
+### 3. Entorno de Desarrollo (Local)
+Para levantar el servidor de desarrollo local y probar los cambios en tiempo real:
 
 ```sh
 npm run dev
 ```
-
-### Compile and Minify for Production
+### 4. Compilación para Producción
+Para empaquetar, minificar y generar la carpeta de distribución final (dist) con el archivo _redirects incluido antes de subirlo a Netlify:
 
 ```sh
 npm run build
+```
+### 5. Respaldo en el repositorio
+Para guardar los cambios de forma local en Git y subirlos al repositorio remoto de GitHub:
+
+```sh
+git add .
+git commit -m "Feat: Frontend"
+git branch -M main
+git push -u origin main
 ```
